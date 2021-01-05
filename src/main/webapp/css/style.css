@@ -664,7 +664,9 @@ ol {
 .signup-form input[type=email],
 .signup-form input[type=date],
 .signup-form input[type=password],
+.signup-form input[type=file],
 .signup-form textarea,
+.signup-form select,
 .contact-form input[type=text],
 .contact-form input[type=email],
 .contact-form textarea {
@@ -679,14 +681,33 @@ ol {
 	background: #edf4f6;
 }
 
+.signup-form input[type=radio]{
+	height: 22px;
+	width: 50%;
+	padding: 0 10px;
+	margin-bottom: 40px;
+	float: left;
+	border: none;
+	font-size: 14px;
+	font-weight: 200;
+	background: #edf4f6;
+}
+
 .signup-form input[type=text]:focus,
 .signup-form input[type=email]:focus,
 .signup-form input[type=date]:focus,
 .signup-form input[type=password]:focus,
+.signup-form input[type=file]:focus,
+.signup-form input[type=radio]:focus,
 .signup-form textarea:focus,
+.signup-form select:focus,
 .contact-form input[type=text]:focus,
 .contact-form input[type=email]:focus,
 .contact-form textarea:focus {
+	border-bottom: 2px solid #d82a4e;
+}
+
+.signup-form input[type=radio]:focus{
 	border-bottom: 2px solid #d82a4e;
 }
 

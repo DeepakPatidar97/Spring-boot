@@ -46,7 +46,17 @@ public class UserDAO {
 	@Column(name = "PASSWORD")
 	private String password;
 	
+	@Column(name = "user_image")
+	private String photo;
 	
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
 	public String getPassword() {
 		return password;
 	}

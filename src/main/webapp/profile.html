@@ -33,7 +33,7 @@
 		<div class="loader"></div>
 	</div>
 
-<!-- Header section -->
+	<!-- Header section -->
 	<header class="header-section">
 		<div class="container">
 			<div class="row">
@@ -67,8 +67,7 @@
 	<div class="page-info-section set-bg" data-setbg="img/page-bg/1.jpg">
 		<div class="container">
 			<div class="site-breadcrumb">
-				<a href="#">Home</a>
-				<span>Profile</span>
+				<a href="#">Home</a> <span>Profile</span>
 			</div>
 		</div>
 	</div>
@@ -81,42 +80,123 @@
 		<div class="signup-bg "></div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-12 ">					
-						<!-- signup form -->
-						<form class="signup-form">
-						<div class="col-md-5 mb-3 col-lg-1 offset-lg-0"  >
+				<div class="col-lg-12 ">
+
+
+					<!-- signup form -->
+					<form class="signup-form" action="/profileUpdate" method="Post">
+						
+						<div class="col-md-5 mb-3 col-lg-1 offset-lg-0">
 							<img class="rounded-circle z-depth-1" alt="100x100"
 								src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
 								data-holder-rendered="true">
-								
+
 						</div>
-						<label
-								for="v-upload" class="file-up-btn">Upload photo</label> <input
-								type="file" id="v-upload">
-							<input type="text" placeholder="Your Name"> <input
-								type="text" placeholder="Your E-mail"> <input
-								type="text" placeholder="Your Phone"> 
-								<input type="text" placeholder="Your Name"> <input
-								type="text" placeholder="Your E-mail"> <input
-								type="text" placeholder="Your Phone"> 
-								<input type="text" placeholder="Your Name"> <input
-								type="text" placeholder="Your E-mail"> <input
-								type="text" placeholder="Your Phone"> 
-								<input type="text" placeholder="Your Name"> <input
-								type="text" placeholder="Your E-mail"> <input
-								type="text" placeholder="Your Phone"> 
-								<input type="text" placeholder="Your Name"> <input
-								type="text" placeholder="Your E-mail"> <input
-								type="text" placeholder="Your Phone"> 
-								<input type="text" placeholder="Your Name"> <input
-								type="text" placeholder="Your E-mail"> <input
-								type="text" placeholder="Your Phone"> 
-							<button class="site-btn">Search Couse</button>
-						</form>
-					</div>
+						<label for="v-upload" class="file-up-btn">Upload photo</label> <input
+							type="file" id="v-upload" name="userimage">
+							
+							
+							
+						<div class="form-group row">
+							<label for="example-text-input" class="col-2 col-form-label">Full Name</label>
+							<div class="col-10">
+								<input class="form-control" type="text" placeholder="Full Name "
+									id="example-text-input" name="name">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label for="example-email-input" class="col-2 col-form-label">Email</label>
+							<div class="col-10">
+								<input class="form-control" type="email"
+									placeholder="Email" id="example-email-input" name="email">
+							</div>
+						</div>
+						
+						
+						<div class="form-group row">
+							<label for="example-number-input" class="col-2 col-form-label">Number</label>
+							<div class="col-10">
+								<input class="form-control" type="text" placeholder="Contact Number"
+									id="example-number-input" name="mobile">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label for="example-date-input" class="col-2 col-form-label">Date Of Birth</label>
+							<div class="col-10">
+								<input class="form-control" type="date" value=""
+									id="example-date-input" name="birthdate">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label for="example-text-input" class="col-2 col-form-label">Address</label>
+							<div class="col-10">
+								<input class="form-control" type="text" placeholder="Address"
+									id="example-text-input" name="address">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label for="example-text-input" class="col-2 col-form-label">Country</label>
+							<div class="col-10">
+								<input class="form-control" type="text" placeholder="Contry"
+									id="example-text-input" name="Contry">
+							</div>
+						</div>
+
+						<!-- <div class="form-group row">
+							<label for="example-text-input" class="col-2 col-form-label">Country</label>
+							<select class="form-control col-10" id="exampleSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div> -->
+
+						<div class="form-group row">
+							<label for="example-number-input" class="col-2 col-form-label">Pin Code</label>
+							<div class="col-10">
+								<input class="form-control" type="text" placeholder="Pin Code"
+									id="example-number-input" name="pincode">
+							</div>
+						</div>
+						
+							<div class="form-group row">
+							<label for="example-text-input" class="col-2 col-form-label">Gender</label>
+							<div class="col-10">
+								<input class="form-control" type="text" placeholder="Gender"
+									id="example-text-input" name="gender">
+							</div>
+						</div>
+						
+						
+						<div class="form-group row">
+							<label for="example-password-input" class="col-2 col-form-label">Change Password</label>
+							<div class="col-10">
+								<input class="form-control" type="password" value="" placeholder="New Password"
+									id="example-password-input" name="password">
+							</div>
+						</div>
+						
+						
+						<div class="form-group row">
+							<label for="example-password-input" class="col-2 col-form-label">Confirm Password</label> 
+							<div class="col-10">
+								<input class="form-control" type="password" value="" placeholder="Confirm Password"
+									id="example-password-input" name="confirm_password">
+							</div>
+						</div>
+						
+						<button class="site-btn">Update</button>
+					</form>
 				</div>
 			</div>
-		
+		</div>
+
 	</section>
 	<!-- signup section end -->
 

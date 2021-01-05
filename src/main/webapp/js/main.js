@@ -122,3 +122,5 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+$('.datepicker').datepicker();
+$(document).off('.datepicker.data-api');
